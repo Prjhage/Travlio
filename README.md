@@ -18,6 +18,11 @@ Whether you're planning a quick getaway or a long vacation, Travlio helps you st
 
 ---
 
+## Video
+
+https://github.com/user-attachments/assets/718bc7e7-c9c3-4f87-aa13-344df137f1d2
+
+
 ## 📸 Screenshots
 
 ### 🔹 Home Page  
