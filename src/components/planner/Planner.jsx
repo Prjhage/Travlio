@@ -88,7 +88,7 @@ const Planner = () => {
 
     try {
       await addDoc(collection(db, "users", user.uid, "trips"), tripData);
-      alert("✅ Trip saved to Firestore!");
+     
       window.location.href = "/trip";
     } catch (error) {
       console.error("Error saving trip:", error);
