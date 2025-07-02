@@ -34,7 +34,7 @@ const Login = () => {
     e.preventDefault();
     try {
       await signInWithEmailAndPassword(auth, email, password);
-      navigate("/trip");
+      navigate("/");
     } catch (err) {
       setError("Invalid email or password.");
     }
@@ -44,7 +44,7 @@ const Login = () => {
     e.preventDefault();
     try {
       await createUserWithEmailAndPassword(auth, email, password);
-      navigate("/trip");
+      navigate("/");
     } catch (err) {
       setError("Could not register. Try a different email.");
     }
@@ -53,20 +53,12 @@ const Login = () => {
   const handleGoogleLogin = async () => {
     try {
       await signInWithPopup(auth, new GoogleAuthProvider());
-      navigate("/trip");
+      navigate("/");
     } catch (err) {
       setError("Google login failed.");
     }
   };
 
-  const handleGitHubLogin = async () => {
-    try {
-      await signInWithPopup(auth, new GithubAuthProvider());
-      navigate("/trip");
-    } catch (err) {
-      setError("GitHub login failed.");
-    }
-  };
 
   return (
     <div className={styles.container}>
